@@ -1,5 +1,6 @@
 <main>
   <app-home-find></app-home-find>
+  <app-home-tabs></app-home-tabs>
   <div class="list">
     <a [routerLink]="'/product/' + item.id" class="item" *ngFor="let item of coffeeData">
       {{item.title}}
