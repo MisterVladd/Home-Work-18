@@ -8,9 +8,29 @@
   </ul>
 
   <div class="tab-content">
-    <div *ngIf="selectedTab === 'tab1'">Content for Tab 1</div>
-    <div *ngIf="selectedTab === 'tab2'">Content for Tab 2</div>
-    <div *ngIf="selectedTab === 'tab3'">Content for Tab 3</div>
+    <div *ngIf="selectedTab === 'tab1'">
+      <div class="list">
+        <a [routerLink]="'/product/' + item.id" class="item" *ngFor="let item of coffeeData">
+          {{item.title}}
+          {{item.desc}}
+          {{item.id}}
+        </a>
+      </div>  
+    </div>
+    <div *ngIf="selectedTab === 'tab2'">
+      <div class="list">
+        <a [routerLink]="'/robusta/' + item.id" class="item" *ngFor="let item of RobustaData">
+          {{item.title}}
+          {{item.id}}
+        </a>
+      </div>  
+    </div>
+    <div *ngIf="selectedTab === 'tab3'"><div class="list">
+      <a [routerLink]="'/latte/' + item.id" class="item" *ngFor="let item of LatteData">
+        {{item.title}}
+        {{item.id}}
+      </a>
+    </div>  </div>
     <div *ngIf="selectedTab === 'tab4'">Content for Tab 4</div>
     <div *ngIf="selectedTab === 'tab5'">Content for Tab 5</div>
   </div>
