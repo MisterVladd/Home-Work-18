@@ -1,0 +1,153 @@
+.welcome {}
+
+.img {
+    position: relative;
+}
+
+.header {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    width: 100%;
+    padding: 22rem;
+}
+
+.icon-chevron-left::before {
+    background: var(--background-icons);
+    border: 1px solid #21262E;
+    border-radius: var(--border-radius);
+    width: 34rem;
+    height: 34rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-form);
+
+
+}
+
+.icon-heart::before {
+    background: var(--background-icons);
+    border: 1px solid #21262E;
+    border-radius: var(--border-radius);
+    width: 34rem;
+    height: 34rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-red);
+}
+
+.sidebar {
+    position: absolute;
+    border-radius: 25rem 25rem 0 0;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 19rem 22rem 16rem 22rem;
+
+    &__text {}
+
+    &__text-title {
+        font-weight: 600;
+        font-size: 20rem;
+        line-height: 100%;
+        margin-bottom: 2rem;
+    }
+
+    &__text-desc {
+        font-weight: 400;
+        font-size: 12rem;
+        line-height: 167%;
+        color: var(--color-desc);
+        margin-bottom: 25rem;
+    }
+
+    &__text-rating {
+        display: flex;
+        align-items: center;
+    }
+
+    &__icon {}
+}
+
+.star {
+    transform: scale(1.4);
+    padding-right: 6rem;
+}
+
+.icon-star::before {
+    color: var(--active-color);
+}
+
+.grade {
+    padding-right: 3rem;
+    font-weight: 600;
+    font-size: 16rem;
+    line-height: 125%;
+}
+
+.number {
+    font-weight: 400;
+    font-size: 10rem;
+    line-height: 200%;
+    color: #aeaeae;
+}
+
+.sidebar__icon {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20rem;
+    row-gap: 13rem;
+}
+
+.bean {}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #141921;
+    border-radius: 10px;
+    padding: 12rem 11rem 5rem 11rem;
+
+    &:last-child {
+        padding: 12rem 23rem;
+    }
+
+    span {
+        font-weight: 500;
+        font-size: 10rem;
+        line-height: 200%;
+        color: #aeaeae;
+    }
+
+    span::before {
+        color: var(--active-color);
+        font-size: 24rem;
+    }
+
+    &:last-child {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 3;
+
+    }
+
+    &__desc {}
+}
+
+.icon-coffee {}
+
+.africa {}
+
+.icon-location {}
+
+.medium {}

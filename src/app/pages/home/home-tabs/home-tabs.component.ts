@@ -14,35 +14,66 @@ export class HomeTabsComponent {
 
   public coffeeData = [
     {
-      title: 'CappucinoFFF',
+      title: 'Cappucino',
+      desc: 'With Steamed Milk',
+      cost: '4.20',
+      star: '4.5',
       id: 1,
-      desc: 'With Steamed Milk'
     },
     {
-      title: 'Latte',
+      title: 'Cappucino',
+      desc: 'With Foam',
+      cost: '4.20',
+      star: '4.2',
       id: 2,
-      desc: 'With nice'
+    },
+    {
+      title: 'Cappucino',
+      desc: 'With Steamed Milk',
+      cost: '4.20',
+      star: '4.5',
+      id: 3,
     },
   ]
 
   public RobustaData = [
     {
-      title: 'RobustaBeans',
+      title: 'Robusta Beans',
+      desc: 'Medium Roasted',
+      cost: '4.20',
       id: 1,
     },
     {
-      title: 'Latte',
+      title: 'Cappucino',
+      desc: 'With Steamed Milk',
+      cost: '4.20',
       id: 2,
+    },
+    {
+      title: 'Cappucino',
+      desc: 'With Steamed Milk',
+      cost: '4.20',
+      id: 3,
     },
   ]
   public LatteData = [
     {
-      title: 'LatteBeans',
+      title: 'Robusta Beans',
+      desc: 'Medium Roasted',
+      cost: '4.20',
       id: 1,
     },
     {
-      title: 'Latte',
+      title: 'Cappucino',
+      desc: 'With Steamed Milk',
+      cost: '4.20',
       id: 2,
+    },
+    {
+      title: 'Cappucino',
+      desc: 'With Steamed Milk',
+      cost: '4.20',
+      id: 3,
     },
   ]
 }

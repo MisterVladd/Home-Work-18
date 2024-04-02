@@ -15,6 +15,7 @@ const routes: Routes = [
   { path: 'latte/:id', component: LatteComponent },
 ];
 
+
 @NgModule({
   declarations: [
     HomeComponent,

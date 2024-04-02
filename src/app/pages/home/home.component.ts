@@ -9,11 +9,13 @@ export class HomeComponent {
   public coffeeData = [
     {
       title: 'Cappucino',
-      id: 1,
+      desc: 'With Steamed Milk',
+      cost: 4.20,
     },
     {
-      title: 'Latte',
-      id: 2,
+      title: 'Cappucino',
+      desc: 'With Foam',
+      cost: 4.20,
     },
   ]
 

@@ -11,27 +11,80 @@
     <div *ngIf="selectedTab === 'tab1'">
       <div class="list">
         <a [routerLink]="'/product/' + item.id" class="item" *ngFor="let item of coffeeData">
-          {{item.title}}
-          {{item.desc}}
-          {{item.id}}
+          <div class="img">
+            <img src="assets/cappuccino/cappuccino-1.jpg" alt="Cappuccino">
+            <div class="star"> <span class="icon-star"></span> {{item.star}}</div>
+          </div>
+          <div class="title">{{item.title}}</div>
+          <div class="desc">{{item.desc}}</div>
+          <div class="price-cart">
+            <div class="price">
+              <span class="dollar">&#36;</span>
+              <div class="cost">{{item.cost}}</div>
+            </div>
+            <div class="plus"><span class="icon-plus"></span></div>
+          </div>
+        </a>
+      </div>  
+      <div class="title-coffee">Coffee beans</div>
+      <div class="list">
+        <a [routerLink]="'/robusta/' + item.id" class="item" *ngFor="let item of RobustaData">
+          <div class="img"><img src="assets/robusta/robusta-1.jpg" alt="Cappuccino"></div>
+          <div class="title">{{item.title}}</div>
+          <div class="desc">{{item.desc}}</div>
+          <div class="price-cart">
+            <div class="price">
+              <span class="dollar">&#36;</span>
+              <div class="cost">{{item.cost}}</div>
+            </div>
+            <div class="plus"><span class="icon-plus"></span></div>
+          </div>
         </a>
       </div>  
     </div>
     <div *ngIf="selectedTab === 'tab2'">
       <div class="list">
-        <a [routerLink]="'/robusta/' + item.id" class="item" *ngFor="let item of RobustaData">
-          {{item.title}}
-          {{item.id}}
+        <a [routerLink]="'/product/' + item.id" class="item" *ngFor="let item of coffeeData">
+          <div class="img">
+            <img src="assets/cappuccino/cappuccino-1.jpg" alt="Cappuccino">
+            <div class="star"> <span class="icon-star"></span> {{item.star}}</div>
+          </div>
+          <div class="title">{{item.title}}</div>
+          <div class="desc">{{item.desc}}</div>
+          <div class="price-cart">
+            <div class="price">
+              <span class="dollar">&#36;</span>
+              <div class="cost">{{item.cost}}</div>
+            </div>
+            <div class="plus"><span class="icon-plus"></span></div>
+          </div>
         </a>
       </div>  
     </div>
     <div *ngIf="selectedTab === 'tab3'"><div class="list">
+      <div class="list">
+        <a [routerLink]="'/robusta/' + item.id" class="item" *ngFor="let item of RobustaData">
+          <div class="img"><img src="assets/robusta/robusta-1.jpg" alt="Cappuccino"></div>
+          <div class="title">{{item.title}}</div>
+          <div class="desc">{{item.desc}}</div>
+          <div class="price-cart">
+            <div class="price">
+              <span class="dollar">&#36;</span>
+              <div class="cost">{{item.cost}}</div>
+            </div>
+            <div class="plus"><span class="icon-plus"></span></div>
+          </div>
+        </a>
+      </div>  
+    </div>  </div>
+    <div *ngIf="selectedTab === 'tab4'">
+     <div class="list">
       <a [routerLink]="'/latte/' + item.id" class="item" *ngFor="let item of LatteData">
         {{item.title}}
         {{item.id}}
       </a>
-    </div>  </div>
-    <div *ngIf="selectedTab === 'tab4'">Content for Tab 4</div>
+     </div>
+  </div>
     <div *ngIf="selectedTab === 'tab5'">Content for Tab 5</div>
   </div>
 </div>
