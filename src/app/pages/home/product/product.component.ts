@@ -11,4 +11,16 @@ export class ProductComponent {
   goBack(): void {
     this.location.back();
   }
+
+  isActive: boolean = false;
+
+  toggleActive() {
+    this.isActive = !this.isActive;
+  }
+
+  activeLink: number | null = null;
+
+  setActive(linkNumber: number): void {
+    this.activeLink = linkNumber;
+  }  
 }

@@ -1,8 +1,14 @@
-
+body{
+    height: 100vh;
+}
 .welcome {}
 
 .img {
     position: relative;
+    
+    
+    img{
+    }
 }
 
 .header {
@@ -41,9 +47,10 @@
     align-items: center;
     justify-content: center;
     color: var(--color-form);
-    &.active{
-        color: var(--color-red);
-    }
+    transition: var(--transition);
+}
+.icon-heart.active::before{
+    color: var(--color-red);
 }
 
 .sidebar {
@@ -192,8 +199,9 @@
         padding: 10rem 28rem;
         border-radius: 10rem;
         background: #141921;
+        cursor: pointer;
 
-        &.active {
+        &.is-active {
             color: var(--active-color);
             border: 2px solid var(--active-color);
         }
@@ -244,4 +252,5 @@
     background: var(--active-color);
     padding: 20rem 74rem;
     border-radius: 20rem;
+    cursor: pointer;
 }
